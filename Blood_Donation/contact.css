@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+h2, h3 {
+    color: #D32F2F;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.contact-us {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 1;
+    max-width: 550px;
+}
+
+.left h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.inputBox input, .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 16px;
+    transition: 0.3s;
+    color: #999;
+}
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #D32F2F;
+}
+
+.submit-btn {
+    background-color: #D32F2F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Right: Contact Info */
+.right {
+    flex: 1;
+    max-width: 450px;
+    padding-left: 50px;
+}
+
+.right h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.right .info {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.right .info li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.right .info li i {
+    margin-right: 10px;
+    color: #D32F2F;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #D32F2F;
+    margin-right: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #b71c1c;
+    transform: scale(1.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.left, .right {
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .right {
+        padding-top: 50px;
+    }
+}

@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Blood Donor - Blood Donation</title>
+    <link rel="stylesheet" href="Donor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     
+        
+</head>
+<body>
+    <!-- Blood Donor Section -->
+    <section class="donor-section" id="donor">
+        <div class="container">
+            <h2 class="animate-text">Become a Blood Donor</h2>
+            <p class="animate-text">Your blood can save lives! Join our community of donors today.</p>
+
+            <form class="donor-form animate-fade" Action="Donor.jsp">
+                <div class="form-group">
+                    <label for="donor-name">Donor Name:<input type="text" id="donor-name" name="donorname" placeholder="Enter your name" required></label>
+                    </div>
+
+                <div class="form-group">
+                    <label>Blood Group:</label>
+                    <div class="blood-types">
+                        <label>
+                            <input type="radio" name="blood-group" value="A+" required>
+                            A+
+                        </label>
+                        <label>
+                            <input type="radio" name="blood-group" value="AB+" required>
+                            AB+
+                        </label>
+                        <label>
+                            <input type="radio" name="blood-group" value="B+" required>
+                            B+
+                        </label>
+                        <label>
+                            <input type="radio" name="blood-group" value="O+" required>
+                            O+
+                        </label>
+                         <label>
+                            <input type="radio" name="blood-group" value="O+" required>
+                            A-
+                        </label>
+                         <label>
+                            <input type="radio" name="blood-group" value="O+" required>
+                            AB-
+                        </label>
+                         <label>
+                            <input type="radio" name="blood-group" value="O+" required>
+                            B-
+                        </label>
+                         <label>
+                            <input type="radio" name="blood-group" value="O+" required>
+                            O-
+                        </label>
+                         
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="loc" placeholder="Enter your location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Number:</label>
+                    <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <!-- Submit Button moved to the last position -->
+                <div class="cta-button">
+                    <button type="submit" class="donate-btn">Submit</button>
+                </div>
+            </form>
+              
+    
+
+        </div>
+    </section>
+</body>
+</html>

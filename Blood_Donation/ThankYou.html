@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Blood Donation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ff6a00, #ee0979);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+        }
+
+        .thank-you-container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        h1.thank-you-message {
+            font-size: 3rem;
+            color: #e74c3c;
+            margin-bottom: 15px;
+            animation: slideInDown 1s ease-out;
+            position: relative;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .cta {
+            margin-top: 30px;
+        }
+
+        .cta .button {
+            text-decoration: none;
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
+            margin: 0 10px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta .button:hover {
+            background-color: #c0392b;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .thank-you-animation {
+            margin-top: 50px;
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        .thank-you-animation img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .animated-heart {
+            position: absolute;
+            right: -10px;
+            top: -15px;
+            font-size: 3rem;
+            color: #e74c3c;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes slideInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <h1 class="thank-you-message">
+            Thank You!
+            <span class="animated-heart">&hearts;</span>
+        </h1>
+        <p>Your blood donation sign-up has been received. Thank you for your selflessness and kindness! We will reach out when a donation opportunity is available.</p>
+        <p>Share this with your friends to inspire them to donate and help save more lives!</p>
+
+        <div class="cta">
+            <a href="index.html" class="button">Back to Home</a>
+            
+        </div>
+
+        <div class="thank-you-animation">
+            <img src="https://media.giphy.com/media/l4FGGafcOHmrlQxG4/giphy.gif" alt="Thank You Animation">
+        </div>
+    </div>
+</body>
+</html>

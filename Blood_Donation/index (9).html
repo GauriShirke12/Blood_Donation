@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="#">BloodLife</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="Donor.html">Blood Donor</a></li>
+                <li><a href="Receiver.html">Blood Receiver</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="signin.html" class="btn">Sign In</a>
+                <a href="signup.html" class="btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Image Slider -->
+    <div class="slider">
+        <div class="slides">
+            <!-- First Image -->
+            <div class="slide">
+                <img src="https://www.modernheartandvascular.com/wp-content/uploads/2022/08/Benefits-of-blood-donation-2048x1152.jpeg" alt="Blood Donation 1">
+                <div class="text">
+                    <h2>Donate Blood, Save Lives</h2>
+                    <p>Your blood can save someone’s life today.</p>
+                </div>
+            </div>
+            <!-- Second Image -->
+            <div class="slide">
+               <img src="https://c8.alamy.com/comp/2RHDBNT/blood-donation-background-hand-hold-tear-of-blood-2RHDBNT.jpg" alt="Blood Donation 3">
+                <div class="text">
+                    <h2>Join the Cause</h2>
+                    <p>Be a hero by giving the gift of life.</p>
+                </div>
+            </div>
+            <!-- Third Image -->
+            <div class="slide">
+                 <img src="https://www.panaynews.net/wp-content/uploads/2022/02/blood-donation-696x365.jpg" alt="Blood Donation 2">
+                
+                <div class="text">
+                    <h2>Every Drop Counts</h2>
+                    <p>Donating blood is simple, but it means everything to someone in need.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <h3></h3>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Add Font Awesome for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript for Image Slider -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(slideIndex) {
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 3000); // Change image every 3 seconds
+        showSlide(currentSlide); // Initially show the first slide
+    </script>
+</body>
+</html>
